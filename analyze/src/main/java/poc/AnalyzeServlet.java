@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class PortalServlet extends HttpServlet {
+public class AnalyzeServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
@@ -16,7 +16,7 @@ public class PortalServlet extends HttpServlet {
 		response.setContentType("text/html");
 		response.setStatus(200);
 		PrintWriter writer = response.getWriter();
-		writer.println("<html><body>Do <a href=\"http://localhost:8080/analyze-1.0/\">Analyze</a></body></html>	");
+		writer.println("<html><body>Finished! <a href=\"http://localhost:8080/portal-1.0/\">Back to Portal</a></body></html>	");
 		writer.close();
 	}
 }
